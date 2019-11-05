@@ -1,0 +1,5 @@
+install.packages("ggplot2")
+install.packages("plotly")
+install.packages("dplyr")
+install.packages("caTools")
+install.packages("magick")
