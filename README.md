@@ -7,40 +7,46 @@
 - [Hugo M. Botelho](http://webpages.fc.ul.pt/~hmbotelho), Biosystems and Integrative Sciences Institute, University of Lisboa 
 
 
+In this exercise, you will use the following open source image analysis software to set up an automated image and data analysis pipeline:
+* CellProfiler
+* Fiji
+* KNIME
 
-## Summary
+## Table of Contents
+* [1. Summary](#summary)
+* [2. Tools](#tools)
+* [3. The microscopy assay](#assay)
+* [4. The dataset](#dataset)
+* [5. Goal](#goal)
+* [6. Software installation](#softwareinstallation)
 
-In this exercise, you will use open source image analysis software to set up an automated image and data analysis pipeline that will:
+
+
+## <a name="summary">Summary</a>
+
+The image and data analysis pipeline you will use performs the following tasks:
 
 1. Segment individual intestinal organoids in a time-lapse fluorescence experiment;  
-
 2. Measure cross-sectional organoid area;  
-
 3. Track organoids across frames;  
-
 4. Ignore organoids which can not be reliably measured:  
     * Organoids touching image borders
     * Organoids whose segmentation fails in some frames
-    
 5. Summarize and normalize measurements;  
-
 6. Report results as a plot.  
-
 
 ![Workflow](misc/workflow0.gif)
 
 
 
+## <a name="tools">2. Tools</a>
 
-## Tools
-
-The problem has been tackled with 4 different open source software tools:  
+The problem will be tackled with 4 different open source software tools:  
 
 * Image processing was perormed on [CellProfiler](https://cellprofiler.org/), [Fiji/ImageJ](http://fiji.sc/) and [KNIME](https://www.knime.com/).  
 * Data analysis was performed on [R](https://cran.r-project.org/) or [KNIME](https://www.knime.com/).  
 
 Step-by-step details on the analysis process are available as web pages or Jupyter notebooks. Click the links to open the sections referring to image processing and data analysis.
-
 
 * **CellProfiler**
     * Image processing [[web](CellProfiler/01_CellProfiler_image_processing.md)]
@@ -53,12 +59,11 @@ Step-by-step details on the analysis process are available as web pages or Jupyt
 * **KNIME**
     * Image and data analysis [[web](KNIME/01_KNIME.md)]
 
-*Software installation instructions below*
+*Software installation instructions [below](#softwareinstallation)*
 
 
 
-
-## The microscopy assay
+## <a name="assay">3. The microscopy assay</a>
 
 Cystic Fibrosis (CF) is a disease caused by mutations in the CFTR gene. CFTR is a chloride channel and, thus, one can assess its activity *in vivo* by observing its effect in osmotic processes, such as in the Foskolin-Induced Swelling (FIS) assay:  
 
@@ -73,8 +78,7 @@ Detailed information about the assay: [Dekkers *et al* (2013) Nature Medicine 19
 
 
 
-
-## The dataset
+## <a name="dataset">4. The dataset</a>
 
 This exercise includes a FIS dataset obtained with fluorescently-labelled organoids laid out in a multi-well plate as follows:  
 
@@ -100,17 +104,15 @@ This is a short description of the dataset:
 
 Data source: [Schwank *et al* (2013) Cell Stem Cell 13(6) 653-658](http://www.sciencedirect.com/science/article/pii/S1934590913004931)  
 
-
  
 
-## Goal
+## <a name="goal">5. Goal</a>
 
 Determine which of the 2 corrected clones produced the best swelling (*i.e.* CFTR correction).
 
 
 
-
-## Software installation
+## <a name="softwareinstallation">6. Software installation</a>
 Click headers to show installation instructions.  
 
 
@@ -122,11 +124,13 @@ Click headers to show installation instructions.
   2. Unzip file
 </details>
 
+
 <details>
     <summary><strong>Web Browser</strong></summary>
   
   A web browser is required to run Jupyter notebooks. Any browser should work, but some interactive features will only be available on [Mozilla Firefox](https://www.mozilla.org/firefox).
 </details>
+
 
 <details>
     <summary><strong>CellProfiler</strong></summary>
@@ -135,6 +139,7 @@ Click headers to show installation instructions.
   1. Download Cellprofiler from [https://cellprofiler.org/releases/](https://cellprofiler.org/releases/). Select the version matching your operating system. Note: "CellProfiler Analyst" is a different program, which is not used in this tutorial.
   2. Install.
 </details>
+
 
 <details>
     <summary><strong>Jupyter Notebooks</strong></summary>
@@ -154,6 +159,7 @@ Click headers to show installation instructions.
   8. The notebook should open in the default web browser. [Mozilla Firefox](https://www.mozilla.org/firefox) is recommended.
   9. Double click `.ipynb` files to open them it.
 </details>
+
 
 <details>
     <summary><strong>KNIME</strong></summary>
