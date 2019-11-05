@@ -2,8 +2,10 @@
 
 ## Image processing with CellProfiler
 
+
 ![CellProfiler logo](../misc/cp_logo.png)
 ​
+
 CellProfiler is an open source image analysis software which aims at enabling biologists without training in computer vision or coding to quantitatively analyze a large number (thousands) of images. It is commonly used in multiplexed cell-based assays, such as high-content screening (HCS). There are CellProfiler versions for Windows, mac OS and cluster environments.
 
 This exercise uses CellProfiler [version 3.1.9.](https://cellprofiler.org/releases/)
@@ -32,8 +34,8 @@ This exercise uses CellProfiler [version 3.1.9.](https://cellprofiler.org/releas
 * [4. Data analysis](#dataanalysis)
 
 
+## <a name="goal">1. Goal</a>
 
-​## <a name="goal">1. Goal</a>
 In this exercise we will use CellProfiler to:  
 * Segment fluorescently-labeled organoids
 * Measure their cross-sectional area
@@ -55,6 +57,8 @@ In this exercise we will use CellProfiler to:
 
 
 ## <a name="performingimageanalysis">3. Performing image analysis</a>
+
+
 
 ### <a name="open">3.1. Open CellProfiler</a>
 * Double click the `image_analysis.cpproj` file to open it in CellProfiler.
